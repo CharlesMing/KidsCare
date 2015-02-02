@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lanbiao.youxiaoyunfamily"
+    android:versionCode="103"
+    android:versionName="1.0.3" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 在SDCard中创建与删除文件权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 往SDCard写入数据权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <instrumentation
+        android:name="android.test.InstrumentationTestRunner"
+        android:targetPackage="com.lanbiao.youxiaoyunfamily" >
+    </instrumentation>
+
+    <application
+        android:name="com.lanbiao.youxiaoyunfamily.AppAppliction"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <uses-library android:name="android.test.runner" />
+
+        <activity
+            android:name="com.lanbiao.youxiaoyunfamily.activity.WelcomeActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.lanbiao.youxiaoyunfamily.activity.LoginWelcomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lanbiao.youxiaoyunfamily.activity.FamilyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lanbiao.youxiaoyunfamily.activity.BabyDynamicActivity"
+            android:screenOrientation="portrait" />
+        <!-- 课程 -->
+        <activity
+            android:name="com.lanbiao.youxiaoyunfamily.activity.CourseMondayActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lanbiao.youxiaoyunfamily.activity.CourseTuesdayActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lanbiao.youxiaoyunfamily.activity.CourseFridayActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lanbiao.youxiaoyunfamily.activity.CourseWednesdayActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lanbiao.youxiaoyunfamily.activity.CourseThursdayActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lanbiao.youxiaoyunfamily.activity.CourseViewPagerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lanbiao.youxiaoyunfamily.activity.EmptyActivity"
+            android:screenOrientation="portrait" />
+        <!-- 食谱 -->
+        <activity
+            android:name="com.lanbiao.youxiaoyunfamily.activity.FoodViewPagerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lanbiao.youxiaoyunfamily.activity.FoodFridayActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lanbiao.youxiaoyunfamily.activity.FoodMondayActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lanbiao.youxiaoyunfamily.activity.FoodThursdayActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lanbiao.youxiaoyunfamily.activity.FoodTuesdayActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lanbiao.youxiaoyunfamily.activity.FoodWednesdayActivity"
+            android:screenOrientation="portrait" />
+        <!-- 设置 -->
+        <activity
+            android:name="com.lanbiao.youxiaoyunfamily.activity.SetUpActivity"
+            android:screenOrientation="portrait" />
+        <!-- 关于 -->
+        <activity
+            android:name="com.lanbiao.youxiaoyunfamily.activity.AboutActivity"
+            android:screenOrientation="portrait" />
+        <!-- 意见 -->
+        <activity
+            android:name="com.lanbiao.youxiaoyunfamily.activity.AdviceActivity"
+            android:screenOrientation="portrait" />
+        <!-- 育儿中心 -->
+        <activity
+            android:name="com.lanbiao.youxiaoyunfamily.activity.ChildCareCentersActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lanbiao.youxiaoyunfamily.activity.ChildCareCentersListItemActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lanbiao.youxiaoyunfamily.activity.ChildCareCentersNewActivity"
+            android:screenOrientation="portrait" />
+        <!-- 幼儿园动态 -->
+        <activity
+            android:name="com.lanbiao.youxiaoyunfamily.activity.KindergartenDynamicAboutActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lanbiao.youxiaoyunfamily.activity.KindergartenDynamicMsgActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lanbiao.youxiaoyunfamily.activity.KindergartenDynamicNewsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lanbiao.youxiaoyunfamily.activity.KindergartenDynamicTabActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lanbiao.youxiaoyunfamily.activity.KindergartenDynamicMsgDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lanbiao.youxiaoyunfamily.activity.KindergartenDynamicNewsDetailActivity"
+            android:screenOrientation="portrait" />
+        <!-- 亲子活动 -->
+        <activity
+            android:name="com.lanbiao.youxiaoyunfamily.activity.ChildactivityActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lanbiao.youxiaoyunfamily.activity.ChildactivityDetailActivity"
+            android:screenOrientation="portrait" />
+        <!-- 查询留言 -->
+        <activity
+            android:name="com.lanbiao.youxiaoyunfamily.activity.MessageActivity"
+            android:screenOrientation="portrait" />
+        <!-- ShowDialogInfo -->
+        <activity android:name="com.lanbiao.youxiaoyunfamily.prompt.ShowDialogInfo" />
+        <!-- 滑动翻页 -->
+        <activity android:name="com.lanbiao.youxiaoyunfamily.activity.ImagePagerActivity" />
+        <activity
+            android:name="com.lanbiao.youxiaoyunfamily.wxapi.WXEntryActivity"
+            android:exported="true"
+            android:label="@string/app_name" >
+        </activity>
+    </application>
+
+</manifest>

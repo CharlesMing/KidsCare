@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f0f0e0" >
+
+    <RelativeLayout
+        android:id="@+id/rl_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="64.0dip"
+        android:background="@drawable/setup_top_bg" >
+
+        <Button
+            android:id="@id/btn_p_message_back_id"
+            android:layout_width="80.0dip"
+            android:layout_height="40.0dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="9.0dip"
+            android:layout_marginRight="9.0dip"
+            android:background="@drawable/btn_back_selector" />
+
+        <TextView
+            android:layout_width="190.0dip"
+            android:layout_height="34.0dip"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="right|center"
+            android:paddingLeft="3.0dip"
+            android:shadowColor="@color/public_black_color"
+            android:shadowDx="1.0"
+            android:shadowRadius="2.0"
+            android:text="@string/p_top_title_message_string"
+            android:textColor="@color/public_white_color"
+            android:textSize="@dimen/t_main_top_txtv_28_dimens"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/p_tm_bottom_bg"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/btn_send_selector" />
+
+        <EditText
+            android:id="@+id/et_sendmessage"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/btn_send"
+            android:background="@drawable/p_tm_bottom_input_bg"
+            android:hint="@string/p_teacher_message_default_hint_string"
+            android:textSize="@dimen/setup_backmsg_txtv_16_dimens" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/rl_bottom"
+        android:layout_below="@id/rl_layout"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:layout_marginTop="10.0dip"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:dividerHeight="5dp"
+        android:scrollbars="none" />
+
+</RelativeLayout>

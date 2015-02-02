@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/p_dynamic_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="60.0dip" >
+
+        <ListView
+            android:id="@id/listv_p_teacher_message_id"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:divider="@null" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/p_tm_bottom_bg"
+            android:orientation="vertical" >
+
+            <EditText
+                android:layout_width="215.0dip"
+                android:layout_height="35.0dip"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="9.0dip"
+                android:background="@drawable/p_tm_bottom_input_bg"
+                android:hint="@string/p_teacher_message_default_hint_string"
+                android:padding="3.0dip"
+                android:textSize="@dimen/setup_backmsg_txtv_16_dimens" />
+
+            <Button
+                android:layout_width="71.0dip"
+                android:layout_height="35.0dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="9.0dip"
+                android:background="@drawable/btn_send_selector" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@id/rlayout_top_id"
+        android:layout_width="fill_parent"
+        android:layout_height="64.0dip"
+        android:background="@drawable/setup_top_bg" >
+
+        <Button
+            android:id="@id/btn_p_message_back_id"
+            android:layout_width="80.0dip"
+            android:layout_height="40.0dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="9.0dip"
+            android:layout_marginRight="9.0dip"
+            android:background="@drawable/btn_back_selector" />
+
+        <TextView
+            android:layout_width="190.0dip"
+            android:layout_height="34.0dip"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="right|center"
+            android:paddingLeft="3.0dip"
+            android:shadowColor="@color/public_black_color"
+            android:shadowDx="1.0"
+            android:shadowRadius="2.0"
+            android:text="@string/p_top_title_message_string"
+            android:textColor="@color/public_white_color"
+            android:textSize="@dimen/t_main_top_txtv_28_dimens"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</RelativeLayout>

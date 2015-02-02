@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="50.0dip"
+    android:background="@color/t_bnd_txtv_right_99CC00_color"
+    android:gravity="center_vertical" >
+
+    <TextView
+        android:id="@id/txtv_breg_type_left_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="13.0dip"
+        android:text="精品推荐"
+        android:textColor="@color/public_white_color"
+        android:textSize="@dimen/t_bnd_txtv_type_20_dimens"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@id/imgv_breg_type_right_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="13.0dip"
+        android:src="@drawable/collapse" />
+
+</RelativeLayout>

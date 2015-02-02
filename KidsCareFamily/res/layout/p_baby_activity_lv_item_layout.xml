@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/p_baby_activity_lv_item_selector"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/imgv_lv_item_icon_id"
+        android:layout_width="60.0dip"
+        android:layout_height="60.0dip"
+        android:layout_marginLeft="9.0dip"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_launcher" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="9.0dip"
+        android:layout_marginRight="9.0dip"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@id/txtv_pba_lv_item_title_id"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textColor="@color/setup_about_txtv_333333_color"
+            android:textSize="@dimen/login_txt_uname_pwd_14_dimes"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_activity_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@id/txtv_pba_lv_item_content_id"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="30"
+            android:paddingBottom="2.0dip"
+            android:paddingTop="2.0dip"
+            android:singleLine="true"
+            android:text="亲子做的具体内容是让爸爸协助帮忙完成一个活动"
+            android:textColor="@color/setup_about_txtv_999999_color"
+            android:textSize="@dimen/t_main_showname_txtv_12_dimens" />
+
+        <TextView
+            android:id="@id/txtv_pba_lv_item_date_id"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="2014-01-01"
+            android:textColor="@color/setup_version_txtv_color"
+            android:textSize="@dimen/t_main_showname_txtv_12_dimens" />
+    </LinearLayout>
+
+</LinearLayout>

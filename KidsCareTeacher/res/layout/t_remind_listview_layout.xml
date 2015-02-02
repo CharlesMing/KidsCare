@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/llayout_t_class_lv_id"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="52.0dip"
+        android:background="@drawable/t_dyn_title_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15.0dip"
+            android:background="@drawable/t_dyn_title_icon" />
+
+        <TextView
+            android:id="@id/txtv_remind_lv_title_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="9.0dip"
+            android:text="@string/hello_world"
+            android:textColor="@color/public_white_color"
+            android:textSize="@dimen/t_bnd_txtv_top_18_dimens"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@id/lv_remind_bottom_id"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+</LinearLayout>

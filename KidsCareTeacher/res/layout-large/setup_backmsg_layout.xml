@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/setup_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@id/flayout_backmsg_top_id"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/setup_top_bg"
+        android:gravity="center_vertical" >
+
+        <Button
+            android:id="@id/btn_setup_backmsg_back_id"
+            android:layout_width="80.0dip"
+            android:layout_height="40.0dip"
+            android:layout_marginLeft="9.0dip"
+            android:background="@drawable/btn_back_selector" />
+
+        <TextView
+            android:layout_width="150.0dip"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:paddingTop="2.0dip"
+            android:shadowColor="@color/public_black_color"
+            android:shadowDy="1.0"
+            android:shadowRadius="2.0"
+            android:text="@string/setup_backmsg_user_string"
+            android:textColor="@color/public_white_color"
+            android:textSize="@dimen/t_main_top_txtv_28_dimens"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@id/btn_setup_backmsg_submit_id"
+            android:layout_width="80.0dip"
+            android:layout_height="40.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="9.0dip"
+            android:background="@drawable/btn_submit_selector" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fadingEdge="none"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5.0dip"
+            android:orientation="vertical"
+            android:padding="9.0dip" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:background="@drawable/input_back_msg_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="78.0dip"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:paddingLeft="3.0dip"
+                    android:text="@string/setup_backmsg_phone_string"
+                    android:textSize="@dimen/setup_backmsg_txtv_10_dimens"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@id/editv_backmsg_phone_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:background="#00000000"
+                    android:hint="@string/setup_backmsg_phone_hint_string"
+                    android:inputType="phone"
+                    android:maxLength="12"
+                    android:paddingLeft="3.0dip"
+                    android:textSize="@dimen/setup_backmsg_txtv_15_dimens" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_back_msg_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="78.0dip"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:paddingLeft="3.0dip"
+                    android:text="@string/setup_backmsg_message_string"
+                    android:textSize="@dimen/setup_backmsg_txtv_10_dimens"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@id/editv_backmsg_message_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:background="#00000000"
+                    android:hint="@string/setup_backmsg_message_hint_string"
+                    android:inputType="textMultiLine"
+                    android:lines="5"
+                    android:padding="3.0dip"
+                    android:textSize="@dimen/setup_backmsg_txtv_15_dimens" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

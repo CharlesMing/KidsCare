@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/contact_listitem"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+     >
+
+   
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"     
+        android:layout_alignParentLeft="true"  
+        android:gravity="center_vertical"
+        android:layout_gravity="center_vertical"
+        android:paddingTop="8dip"
+        android:paddingLeft="8dip"
+        android:paddingBottom="8dip"
+        android:singleLine="true"
+        android:text="hhhh"
+        android:layout_margin="8dip"
+         />
+    
+
+</RelativeLayout>

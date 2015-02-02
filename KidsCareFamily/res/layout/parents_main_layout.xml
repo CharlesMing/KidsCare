@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/t_main_bg"
+    android:orientation="vertical" >
+
+    <AbsoluteLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@id/llayout_t_middle_id"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="62.0dip"
+                android:background="@drawable/p_t_middle_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/p_main_s_left_bg"
+                    android:orientation="horizontal"
+                    android:paddingTop="20.0dip" >
+
+                    <ImageView
+                        android:id="@id/imgv_p_baby_icon_id"
+                        android:layout_width="52.0dip"
+                        android:layout_height="52.0dip"
+                        android:layout_marginLeft="6.0dip"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/icon" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5.0dip"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@id/txtv_p_baby_name_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="7.0dip"
+                            android:text="幼校云"
+                            android:textColor="@color/t_bnd_txtv_name_006600_color"
+                            android:textSize="@dimen/login_txt_uname_pwd_14_dimes" />
+
+                        <TextView
+                            android:id="@id/txtv_p_baby_age_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5.0dip"
+                            android:layout_marginTop="5.0dip"
+                            android:text="@string/p_main_left_txtv_age_string"
+                            android:textColor="@color/setup_about_txtv_333333_color"
+                            android:textSize="@dimen/t_main_showname_txtv_12_dimens" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3.0dip"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="45.0dip"
+                        android:layout_marginLeft="3.0dip" >
+
+                        <Button
+                            android:id="@id/btn_p_baby_dynamic_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="35.0dip"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="10dip"
+                            android:background="@drawable/btn_p_bdynamic_selector" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignRight="@id/btn_p_baby_dynamic_id"
+                            android:gravity="center" >
+
+                            <include
+                                layout="@layout/msg_count"
+                                android:visibility="gone" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5.0dip"
+                            android:layout_marginTop="3.0dip"
+                            android:text="@string/p_main_right_txtv_go_school_time_string"
+                            android:textColor="@color/p_main_baby_txtv_to_school_time_color"
+                            android:textSize="@dimen/setup_backmsg_txtv_13_dimens"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@id/txtv_p_go_school_time_id"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5.0dip"
+                            android:layout_marginTop="3.0dip"
+                            android:text="@string/p_main_gotosignin_string"
+                            android:textColor="@color/p_main_baby_txtv_to_school_time_color"
+                            android:textSize="@dimen/setup_backmsg_txtv_13_dimens"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="1.0dip"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="2.0dip"
+                        android:layout_marginTop="2.0dip"
+                        android:background="@drawable/p_main_time_line" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5.0dip"
+                            android:layout_marginTop="3.0dip"
+                            android:text="@string/p_main_right_txtv_leval_school_time_string"
+                            android:textColor="@color/p_main_baby_txtv_to_school_time_color"
+                            android:textSize="@dimen/setup_backmsg_txtv_13_dimens"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@id/txtv_p_leval_school_time_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5.0dip"
+                            android:layout_marginTop="3.0dip"
+                            android:text="@string/p_main_leavesignin_string"
+                            android:textColor="@color/p_main_baby_txtv_to_school_time_color"
+                            android:textSize="@dimen/setup_backmsg_txtv_13_dimens"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@id/rlayout_top_id"
+                android:layout_width="fill_parent"
+                android:layout_height="64.0dip"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/parents_t_top_bg" >
+
+                <TextView
+                    android:id="@id/txtv_p_main_schoolname_id"
+                    android:layout_width="180.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:ellipsize="marquee"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="left|center"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:paddingBottom="3.0dip"
+                    android:paddingLeft="3.0dip"
+                    android:paddingRight="10.0dip"
+                    android:shadowColor="@color/public_black_color"
+                    android:shadowDy="1.0"
+                    android:shadowRadius="2.0"
+                    android:singleLine="true"
+                    android:text="@string/app_school_name_string"
+                    android:textColor="@color/public_white_color"
+                    android:textSize="@dimen/parents_main_txtv_top_22_dimens"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="100.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60.0dip"
+                    android:layout_marginTop="11.0dip"
+                    android:ellipsize="marquee"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:text="这才是真正的文字跑马灯效果"
+                    android:textColor="@+android:color/white"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@id/btn_p_main_quit_id"
+                    android:layout_width="80.0dip"
+                    android:layout_height="40.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="9.0dip"
+                    android:background="@drawable/btn_quit_selector" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_x="0.0dip"
+            android:layout_y="170.0dip"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="533.0dip"
+                android:background="@drawable/p_main_bg"
+                android:orientation="vertical"
+                android:paddingLeft="9.0dip"
+                android:paddingRight="9.0dip" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="43.0dip"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@id/btn_p_main_school_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn_p_school_selector" />
+
+                    <Button
+                        android:id="@id/btn_p_main_class_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16.0dip"
+                        android:background="@drawable/btn_p_class_selector" />
+
+                    <Button
+                        android:id="@id/btn_p_main_food_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16.0dip"
+                        android:background="@drawable/btn_p_food_selector" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15.0dip"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@id/btn_p_main_activity_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn_p_activity_selector" />
+
+                    <Button
+                        android:id="@id/btn_p_main_shop_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16.0dip"
+                        android:background="@drawable/btn_p_shop_selector" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16.0dip" >
+
+                        <Button
+                            android:id="@id/btn_p_main_message_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/btn_p_message_selector" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignRight="@id/btn_p_main_message_id"
+                            android:gravity="center" >
+
+                            <include
+                                layout="@layout/msg_count"
+                                android:visibility="gone" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_share"
+                    android:layout_width="80.0dip"
+                    android:layout_height="40.0dip"
+                    android:layout_marginRight="9.0dip"
+                    android:text="分享" />
+            </LinearLayout>
+        </ScrollView>
+    </AbsoluteLayout>
+
+    <Button
+        android:id="@id/btn_p_main_setup_id"
+        android:layout_width="80.0dip"
+        android:layout_height="40.0dip"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="9.0dip"
+        android:layout_marginRight="15.0dip"
+        android:layout_marginTop="20.0dip"
+        android:background="@drawable/btn_setup_selector" />
+
+</RelativeLayout>

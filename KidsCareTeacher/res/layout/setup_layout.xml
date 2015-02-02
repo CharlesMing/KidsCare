@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/setup_bg"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@id/rlayout_top_id"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/setup_top_bg"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@id/btn_setup_back_id"
+            android:layout_width="80.0dip"
+            android:layout_height="40.0dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="9.0dip"
+            android:background="@drawable/btn_back_selector"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="9.0dip"
+            android:layout_marginRight="9.0dip"
+            android:gravity="center"
+            android:shadowColor="@color/public_black_color"
+            android:shadowDy="1.0"
+            android:shadowRadius="2.0"
+            android:text="@string/setup_top_title_string"
+            android:textColor="@color/public_white_color"
+            android:textScaleX="1.0"
+            android:textSize="@dimen/t_main_top_txtv_28_dimens"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fadingEdge="none"
+        android:padding="10.0dip"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_corner_popup"
+                android:orientation="vertical"
+                android:padding="1.0dip" >
+
+                <View
+                    style="@style/setup_divider_style"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@id/txtv_setup_about_id"
+                    style="@style/setup_text_style"
+                    android:background="@drawable/setup_item_bg_selector"
+                    android:text="@string/setup_about_string" />
+
+                <View
+                    style="@style/setup_divider_style"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@id/txtv_setup_clean_id"
+                    style="@style/setup_text_style"
+                    android:background="@drawable/setup_item_bg_selector"
+                    android:text="@string/setup_clean_string" />
+
+                <View
+                    style="@style/setup_divider_style"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@id/txtv_setup_welcome_id"
+                    style="@style/setup_text_style"
+                    android:background="@drawable/setup_item_bg_selector"
+                    android:clickable="true"
+                    android:text="@string/setup_welcome_string" />
+
+                <View
+                    style="@style/setup_divider_style"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/txtv_updatepassword_id"
+                    style="@style/setup_text_style"
+                    android:background="@drawable/setup_item_bg_selector"
+                    android:text="@string/setup_update_string" />
+
+                <TextView
+                    android:id="@id/txtv_setup_backmsg_id"
+                    style="@style/setup_text_style"
+                    android:background="@drawable/setup_item_bg_selector"
+                    android:clickable="true"
+                    android:text="@string/setup_backmsg_string" />
+
+                <View
+                    style="@style/setup_divider_style"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:id="@id/rlayout_setup_check_id"
+                    style="@style/setup_text_style"
+                    android:background="@drawable/setup_item_bg_selector"
+                    android:clickable="true" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:clickable="true"
+                        android:text="@string/setup_check_string"
+                        android:textColor="@color/public_black_color"
+                        android:textSize="18.0sp" />
+
+                    <TextView
+                        android:id="@id/txtv_check_version_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="23.0dip"
+                        android:text="@string/setup_check_version_string"
+                        android:textColor="@color/setup_version_txtv_color"
+                        android:textSize="@dimen/login_txt_uname_pwd_14_dimes" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@id/btn_setup_quit_login_id"
+                android:layout_width="268.0dip"
+                android:layout_height="34.0dip"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15.0dip"
+                android:background="@drawable/btn_quit_login_selector" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

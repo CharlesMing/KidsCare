@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/p_dynamic_bg"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="61.0dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="9.0dip"
+                android:background="@drawable/t_remind_count_people_bg"
+                android:gravity="center_vertical"
+                android:paddingBottom="2.0dip"
+                android:paddingLeft="7.0dip"
+                android:paddingTop="2.0dip"
+                android:text="@string/t_remind_count_people_string"
+                android:textColor="@color/public_white_color"
+                android:textSize="@dimen/parents_main_txtv_top_22_dimens"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="100.0dip"
+                android:layout_marginLeft="9.0dip"
+                android:layout_marginRight="9.0dip"
+                android:background="@color/public_white_color"
+                android:orientation="horizontal"
+                android:paddingLeft="9.0dip" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="9.0dip"
+                    android:background="@color/public_white_color"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="50.0dip"
+                        android:layout_height="50.0dip"
+                        android:src="@drawable/icon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/app_name" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="9.0dip"
+                    android:layout_marginTop="9.0dip"
+                    android:background="@color/public_white_color"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="50.0dip"
+                        android:layout_height="50.0dip"
+                        android:src="@drawable/icon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/app_name" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="9.0dip"
+                    android:layout_marginTop="9.0dip"
+                    android:background="@color/public_white_color"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="50.0dip"
+                        android:layout_height="50.0dip"
+                        android:src="@drawable/icon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/app_name" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="9.0dip"
+                    android:layout_marginTop="9.0dip"
+                    android:background="@color/public_white_color"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="50.0dip"
+                        android:layout_height="50.0dip"
+                        android:src="@drawable/icon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/app_name" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="9.0dip"
+                    android:layout_marginTop="9.0dip"
+                    android:background="@color/public_white_color"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="50.0dip"
+                        android:layout_height="50.0dip"
+                        android:src="@drawable/t_remind_more_icon" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9.0dip"
+                android:layout_marginRight="9.0dip"
+                android:background="@drawable/t_remind_middle_bottom_bg" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="9.0dip"
+                android:layout_marginRight="9.0dip"
+                android:layout_marginTop="9.0dip"
+                android:background="@drawable/t_remind_input_bg"
+                android:orientation="vertical"
+                android:paddingLeft="7.0dip" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7.0dip"
+                    android:text="@string/t_remind_birthday_txtv_string"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3.0dip"
+                    android:background="@null"
+                    android:gravity="top|left|center"
+                    android:inputType="textMultiLine"
+                    android:lines="3"
+                    android:text="@string/t_remind_birthday_default_txtv_string"
+                    android:textColor="@color/setup_about_txtv_999999_color" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@id/rlayout_top_id"
+        android:layout_width="fill_parent"
+        android:layout_height="64.0dip"
+        android:background="@drawable/t_message_top_bg" >
+
+        <Button
+            android:id="@id/btn_t_remind_detail_back_id"
+            android:layout_width="70.0dip"
+            android:layout_height="40.0dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="9.0dip"
+            android:background="@drawable/btn_back_selector" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40.0dip"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="left|center"
+            android:paddingLeft="3.0dip"
+            android:shadowColor="@color/public_black_color"
+            android:shadowDx="1.0"
+            android:shadowRadius="2.0"
+            android:text="@string/t_top_title_birthday_send_string"
+            android:textColor="@color/public_white_color"
+            android:textSize="@dimen/t_main_top_txtv_24_dimens"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@id/btn_t_remind_detail_send_id"
+            android:layout_width="70.0dip"
+            android:layout_height="40.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="7.0dip"
+            android:background="@drawable/btn_send_selector" />
+    </RelativeLayout>
+
+</RelativeLayout>

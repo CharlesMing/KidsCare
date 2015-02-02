@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="DuplicateActivity" severity="ignore" />
+    <issue id="NewApi" severity="ignore" />
+    <issue id="ShowToast" severity="ignore" />
+    <issue id="SimpleDateFormat" severity="ignore" />
+</lint>

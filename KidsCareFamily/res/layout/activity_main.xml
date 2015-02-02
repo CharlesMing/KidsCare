@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/p_dynamic_bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="9.0dip"
+        android:layout_marginLeft="9.0dip"
+        android:layout_marginTop="9.0dip"
+        android:background="@drawable/am_bg" />
+
+    <TextView
+        android:id="@+id/txtv_pbc_am_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30.0dip"
+        android:layout_marginRight="7.0dip"
+        android:text="@string/p_baby_class_txtv_am_string"
+        android:textSize="@dimen/t_main_showname_txtv_12_dimens" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="2.0dip"
+        android:layout_marginTop="2.0dip"
+        android:background="@drawable/p_main_time_line" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="9.0dip"
+        android:layout_marginLeft="9.0dip"
+        android:layout_marginTop="9.0dip"
+        android:background="@drawable/pm_bg" />
+
+    <TextView
+        android:id="@+id/txtv_pbc_pm_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="9.0dip"
+        android:layout_marginLeft="30.0dip"
+        android:layout_marginRight="7.0dip"
+        android:text="@string/p_baby_class_txtv_pm_string"
+        android:textSize="@dimen/t_main_showname_txtv_12_dimens" />
+
+</LinearLayout>

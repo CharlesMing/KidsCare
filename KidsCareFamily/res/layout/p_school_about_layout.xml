@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/p_dynamic_bg"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60.0dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_school_name_id"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="9.0dip"
+                android:gravity="center"
+                android:paddingTop="9.0dip"
+                android:text="@string/app_school_name_string"
+                android:textColor="@color/public_black_color"
+                android:textSize="@dimen/t_bnd_txtv_type_20_dimens"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/iv_school_logo_id"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15.0dip"
+                android:layout_marginRight="15.0dip"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/tv_content_id"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="9.0dip"
+                android:padding="3.0dip"
+                android:text="@string/setup_about_company_string"
+                android:textColor="@color/public_black_color" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="9.0dip"
+                android:layout_marginRight="9.0dip"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/p_sabout_item_bg" >
+
+                    <TextView
+                        android:id="@+id/tv_contactschool_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="9.0dip"
+                        android:text="联系我们：023-67688989" />
+
+                    <ImageButton
+                        android:layout_width="25.0dip"
+                        android:layout_height="25.0dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="9.0dip"
+                        android:src="@drawable/btn_psn_tel" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/p_sabout_item_bg" >
+
+                    <TextView
+                        android:id="@+id/tv_website_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="9.0dip"
+                        android:text="网址：www.kidyun.com" />
+
+                    <ImageButton
+                        android:layout_width="25.0dip"
+                        android:layout_height="25.0dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="9.0dip"
+                        android:src="@drawable/btn_psn_web" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/p_sabout_item_bg" >
+
+                    <TextView
+                        android:id="@+id/tv_address_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="9.0dip"
+                        android:text="地址：重庆市渝北区人和路25号" />
+
+                    <ImageButton
+                        android:layout_width="25.0dip"
+                        android:layout_height="25.0dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="9.0dip"
+                        android:src="@drawable/btn_psn_address" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@id/rlayout_top_id"
+        android:layout_width="fill_parent"
+        android:layout_height="64.0dip"
+        android:background="@drawable/setup_top_bg" >
+
+        <Button
+            android:id="@id/btn_p_school_back_id"
+            android:layout_width="80.0dip"
+            android:layout_height="40.0dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="9.0dip"
+            android:layout_marginRight="9.0dip"
+            android:background="@drawable/btn_back_selector" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:paddingLeft="3.0dip"
+            android:shadowColor="@color/public_black_color"
+            android:shadowDx="1.0"
+            android:shadowRadius="2.0"
+            android:text="@string/p_top_title_about_string"
+            android:textColor="@color/public_white_color"
+            android:textSize="@dimen/t_main_top_txtv_28_dimens"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</RelativeLayout>

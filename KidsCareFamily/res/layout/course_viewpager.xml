@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@id/rlayout_top_id"
+        android:layout_width="fill_parent"
+        android:layout_height="64.0dip"
+        android:background="@drawable/p_class_top_bg" >
+
+        <Button
+            android:onClick="btn_back"
+            android:id="@id/btn_p_class_back_id"
+            android:layout_width="80.0dip"
+            android:layout_height="40.0dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="9.0dip"
+            android:layout_marginRight="9.0dip"
+            android:background="@drawable/btn_back_selector" />
+
+        <TextView
+            android:layout_width="160.0dip"
+            android:layout_height="34.0dip"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="70.0dip"
+            android:layout_marginTop="9.0dip"
+            android:gravity="right|center"
+            android:paddingLeft="3.0dip"
+            android:shadowColor="@color/public_black_color"
+            android:shadowDx="1.0"
+            android:shadowRadius="2.0"
+            android:text="@string/p_top_title_class_string"
+            android:textColor="@color/public_white_color"
+            android:textSize="@dimen/t_main_top_txtv_28_dimens"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <TabHost
+        android:id="@+id/tabhost"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+            </TabWidget>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+            <!-- 将tabhost的tabcontent隐藏，用viewPage填充 -->
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:visibility="gone" >
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</LinearLayout>

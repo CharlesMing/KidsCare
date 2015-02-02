@@ -1,0 +1,120 @@
+package com.chinasousuo.groupsms.db.dao;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import android.content.ContentValues;
+import android.content.Context;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
+
+import com.chinasousuo.groupsms.db.PersonOpenHelper;
+import com.chinasousuo.groupsms.entity.Person;
+
+/**
+ * person表的增、删、改、查
+ * 
+ * @author zhangmingxun
+ * 
+ */
+public class PersonDao {
+	private PersonOpenHelper helper;
+
+	public PersonDao(Context context) {
+		helper = new PersonOpenHelper(context);
+	}
+
+	/**
+	 * 添加电话号码
+	 * 
+	 * @param name
+	 * @param phone
+	 */
+	public void addContact(String name, String phone) {
+		SQLiteDatabase db = helper.getWritableDatabase();
+		ContentValues values = new ContentValues();
+		values.put("name", name);
+		values.put("phone", phone);
+		db.insert("person", null, values);
+		db.close();
+	}
+
+	/**
+	 * 查询所有
+	 * 
+	 * @return
+	 */
+	public List<Person> findAll() {
+		SQLiteDatabase db = helper.getReadableDatabase();
+		List<Person> users = new ArrayList<Person>();
+		Cursor cursor = db.query("person",
+				new String[] { "id", "name", "phone" }, null, null, null, null,
+				null);
+		while (cursor.moveToNext()) {
+			int id = cursor.getInt(cursor.getColumnIndex("id"));
+			String name = cursor.getString(cursor.getColumnIndex("name"));
+			String phone = cursor.getString(cursor.getColumnIndex("phone"));
+			Person u = new Person(id, phone, name);
+			users.add(u);
+		}
+		cursor.close();
+		db.close();
+		return users;
+
+	}
+
+	/**
+	 * 删除
+	 * 
+	 * @return
+	 */
+	public int delete() {
+		SQLiteDatabase db = helper.getWritableDatabase();
+		int number = db.delete("person", null, null);
+		db.close();
+		return number;
+	}
+
+	public int delbyid(String id) {
+		SQLiteDatabase db = helper.getWritableDatabase();
+		int byId = db.delete("person", "id=?", new String[] { id });
+		db.close();
+		return byId;
+	}
+
+	/**
+	 * 通过姓名查询
+	 * 
+	 * @param name
+	 * @return
+	 */
+	public boolean findName(String name) {
+		SQLiteDatabase db = helper.getWritableDatabase();
+		Cursor cursor = db.query("person", null, "name=?",
+				new String[] { name }, null, null, null);
+		boolean result = cursor.moveToNext();
+		cursor.close();
+		db.close();
+		return result;
+
+	}
+
+	public void update(String name, String phone, int id) {
+		SQLiteDatabase db = helper.getWritableDatabase();
+		db = helper.getReadableDatabase();// 可写的数据库
+		db.execSQL("update person set phone=?, name=?  where id=?",
+				new Object[] { phone, name, id });
+		db.close();
+	}
+
+	// public int update(int id, String phone) {
+	// SQLiteDatabase db = helper.getWritableDatabase();
+	// db = helper.getReadableDatabase();
+	// ContentValues values = new ContentValues();
+	// values.put("id", id);
+	// int result = db.update("person", values, "id=?",
+	// new String[] { phone });
+	// db.close();
+	// return result;
+	// }
+}

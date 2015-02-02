@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:background="#465E00"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="255.0dip"
+        android:layout_height="40.0dip"
+        android:background="@drawable/t_class_dg_lv_top_bg" />
+
+    <ListView
+        android:id="@id/lv_t_baby_class_phone_dialog_id"
+        android:layout_width="255.0dip"
+        android:layout_height="fill_parent"
+        android:dividerHeight="-1.0dip" />
+
+</LinearLayout>

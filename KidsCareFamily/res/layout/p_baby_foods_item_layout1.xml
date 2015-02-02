@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="9.0dip"
+        android:layout_marginLeft="9.0dip"
+        android:layout_marginTop="9.0dip"
+        android:background="@drawable/am_bg" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ListView
+            android:id="@+id/lv_amlunch"
+            android:layout_width="wrap_content"
+            android:layout_height="170dp" >
+        </ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30.0dip"
+        android:layout_marginTop="9.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="5.0dip"
+        android:layout_marginTop="10.0dip"
+        android:background="@drawable/p_main_time_line" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="9.0dip"
+        android:layout_marginLeft="9.0dip"
+        android:layout_marginTop="9.0dip"
+        android:background="@drawable/pm_bg" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ListView
+            android:id="@+id/lv_pmlunch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30.0dip"
+        android:layout_marginTop="9.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="9.0dip"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

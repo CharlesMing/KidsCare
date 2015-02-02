@@ -1,0 +1,23 @@
+package com.chinasousuo.groupsms.db;
+
+import android.content.Context;
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteOpenHelper;
+
+public class ContentOpenHelper extends SQLiteOpenHelper {
+
+	public ContentOpenHelper(Context context) {
+		super(context, "content.db", null, 1);
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public void onCreate(SQLiteDatabase db) {
+		db.execSQL("create table content (hello varchar(7),text varchar(70))");
+	}
+	@Override
+	public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+
+	}
+
+}

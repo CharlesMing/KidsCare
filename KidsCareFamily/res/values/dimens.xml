@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="activity_horizontal_margin">16.0dip</dimen>
+    <dimen name="activity_vertical_margin">16.0dip</dimen>
+    <dimen name="login_txt_uname_pwd_14_dimes">14.0sp</dimen>
+    <dimen name="login_txt_show_11_dimes">11.0sp</dimen>
+    <dimen name="t_main_top_txtv_28_dimens">28.0sp</dimen>
+    <dimen name="t_main_top_txtv_26_dimens">26.0sp</dimen>
+    <dimen name="t_main_top_txtv_24_dimens">24.0sp</dimen>
+    <dimen name="t_main_showname_txtv_12_dimens">12.0sp</dimen>
+    <dimen name="t_bnd_txtv_top_18_dimens">18.0sp</dimen>
+    <dimen name="t_bnd_txtv_top_17_dimens">17.0sp</dimen>
+    <dimen name="t_bnd_txtv_type_20_dimens">20.0sp</dimen>
+    <dimen name="parents_main_txtv_top_22_dimens">22.0sp</dimen>
+    <dimen name="p_main_txtv_left_age_13_dimens">13.0sp</dimen>
+    <dimen name="p_tm_txtv_10_dimens">10.0sp</dimen>
+    <dimen name="setup_backmsg_txtv_10_dimens">10.0sp</dimen>
+    <dimen name="setup_backmsg_txtv_13_dimens">13.0sp</dimen>
+    <dimen name="setup_backmsg_txtv_16_dimens">20.0sp</dimen>
+    <dimen name="setup_backmsg_txtv_15_dimens">15.0sp</dimen>
+    <dimen name="updatebar_height">62.0dip</dimen>
+    <dimen name="updatebar_content_height">60.0dip</dimen>
+    <dimen name="updatebar_padding">10.0dip</dimen>
+
+</resources>

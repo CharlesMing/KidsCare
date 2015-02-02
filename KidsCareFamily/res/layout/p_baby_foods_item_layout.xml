@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="9.0dip"
+            android:layout_marginLeft="9.0dip"
+            android:layout_marginTop="9.0dip"
+            android:background="@drawable/am_bg" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30.0dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/iv_breakfast_img"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/icon" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9.0dip"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/txtv_breakfast"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/p_baby_food_txtv_am_string"
+                    android:textColor="#A1A1A1"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtv_breakfast_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="暂无数据"
+                    android:textSize="@dimen/setup_backmsg_txtv_16_dimens" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30.0dip"
+            android:layout_marginTop="9.0dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/iv_morningadd_img"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/icon" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9.0dip"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/txtv_morningadd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/p_baby_food_txtv_am_plus_string"
+                    android:textColor="#A1A1A1"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtv_morningadd_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="暂无数据"
+                    android:textSize="@dimen/setup_backmsg_txtv_16_dimens" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30.0dip"
+            android:layout_marginTop="9.0dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/iv_lunch_img"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/icon" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9.0dip"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/txtv_lunch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/p_baby_food_txtv_pm_string"
+                    android:textColor="#A1A1A1"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtv_lunch_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="暂无数据"
+                    android:textSize="@dimen/setup_backmsg_txtv_16_dimens" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="5.0dip"
+            android:layout_marginTop="10.0dip"
+            android:background="@drawable/p_main_time_line" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="9.0dip"
+            android:layout_marginLeft="9.0dip"
+            android:layout_marginTop="9.0dip"
+            android:background="@drawable/pm_bg" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30.0dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/iv_afternoonadd_img"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/icon" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9.0dip"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/txtv_afternoonadd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/p_baby_food_txtv_pm_plus_string"
+                    android:textColor="#A1A1A1"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtv_afternoonadd_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="暂无数据"
+                    android:textSize="@dimen/setup_backmsg_txtv_16_dimens" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30.0dip"
+            android:layout_marginTop="9.0dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/iv_dinner_img"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/icon" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9.0dip"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/txtv_dinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/p_baby_food_txtv_supper_string"
+                    android:textColor="#A1A1A1"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtv_dinner_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="暂无数据"
+                    android:textSize="@dimen/setup_backmsg_txtv_16_dimens" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

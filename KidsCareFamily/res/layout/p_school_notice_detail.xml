@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/p_dynamic_bg"
+    android:orientation="vertical" >
+
+    <!-- <ScrollView -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="fill_parent" -->
+    <!-- android:layout_marginTop="61.0dip" > -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="61.0dip"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_msg_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7.0dip"
+            android:text="@string/hello_world"
+            android:textSize="@dimen/t_bnd_txtv_type_20_dimens"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                android:text="活动开始时间：" />
+
+            <TextView
+                android:id="@+id/tv_begin_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9.0dip"
+                android:layout_marginTop="5.0dip"
+                android:text="暂无时间" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                android:text="活动结束时间：" />
+
+            <TextView
+                android:id="@+id/tv_end_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9.0dip"
+                android:layout_marginTop="5.0dip"
+                android:text="暂无时间" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                android:gravity="left"
+                android:text="活动联系电话：" />
+
+            <TextView
+                android:id="@+id/tv_acitivityphone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9.0dip"
+                android:layout_marginTop="5.0dip"
+                android:text="暂无号码" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="1.0dip"
+            android:layout_marginTop="9.0dip"
+            android:background="@drawable/divider_line" />
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/tv_activity_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13.0dip"
+                    android:layout_marginRight="13.0dip"
+                    android:layout_marginTop="9.0dip"
+                    android:text="@string/setup_about_company_string" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <!-- </ScrollView> -->
+
+    <RelativeLayout
+        android:id="@id/rlayout_top_id"
+        android:layout_width="fill_parent"
+        android:layout_height="64.0dip"
+        android:background="@drawable/t_raise_top_bg" >
+
+        <TextView
+            android:layout_width="170.0dip"
+            android:layout_height="34.0dip"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="70.0dip"
+            android:layout_marginTop="9.0dip"
+            android:gravity="left|center"
+            android:paddingLeft="3.0dip"
+            android:shadowColor="@color/public_black_color"
+            android:shadowDx="1.0"
+            android:shadowRadius="2.0"
+            android:text="@string/t_top_title_notice_string"
+            android:textColor="@color/public_white_color"
+            android:textSize="@dimen/t_main_top_txtv_28_dimens"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_t_main_join_id"
+            android:layout_width="80.0dip"
+            android:layout_height="40.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="9.0dip"
+            android:layout_marginRight="9.0dip"
+            android:background="@drawable/btn_join_selector"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_named_id"
+            android:layout_width="wrap_content"
+            android:layout_height="40.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="9.0dip"
+            android:layout_marginRight="9.0dip"
+            android:textColor="@color/public_white_color"
+            android:textSize="@dimen/t_main_top_txtv_28_dimens"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

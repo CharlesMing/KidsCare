@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/llayout_t_bnd_lv_item_id"
+    android:layout_width="fill_parent"
+    android:layout_height="50.0dip"
+    android:background="@drawable/t_dyn_lv_item_bg_selector"
+    android:descendantFocusability="blocksDescendants"
+    android:minHeight="50.0dip"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@id/txtv_tnd_lv_item_num_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5.0dip"
+        android:gravity="center"
+        android:text="01"
+        android:textColor="@color/setup_about_txtv_999999_color"
+        android:textSize="@dimen/t_bnd_txtv_top_18_dimens" />
+
+    <ImageView
+        android:id="@id/imgv_tnd_lv_item_icon_id"
+        android:layout_width="35.0dip"
+        android:layout_height="35.0dip"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="6.0dip"
+        android:layout_toRightOf="@id/txtv_tnd_lv_item_num_id"
+        android:background="@drawable/imgv_frame_selector"
+        android:scaleType="fitXY"
+        android:src="@drawable/icon" />
+
+    <com.lanbiao.ui.Focusedtrue4TtextView
+        android:id="@id/txtv_tnd_lv_item_name_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5.0dip"
+        android:layout_toRightOf="@id/imgv_tnd_lv_item_icon_id"
+        android:ellipsize="marquee"
+        android:gravity="center"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:text="@string/app_name"
+        android:textColor="@color/setup_about_txtv_333333_color"
+        android:textSize="@dimen/t_bnd_txtv_top_18_dimens" />
+
+    <ImageButton
+        android:id="@id/imgv_tnd_lv_item_select_id"
+        android:layout_width="20.0dip"
+        android:layout_height="20.0dip"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="9.0dip"
+        android:background="@drawable/selected_no"
+        android:visibility="visible" />
+
+</RelativeLayout>

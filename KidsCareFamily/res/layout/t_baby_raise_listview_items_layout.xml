@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/t_baby_raise_listview_items_bg_selector"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:padding="3.0dip" >
+
+    <ImageView
+        android:id="@id/imgv_t_raise_lv_item_img_id"
+        android:layout_width="74.0dip"
+        android:layout_height="74.0dip"
+        android:scaleType="fitXY"
+        android:src="@drawable/icon" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3.0dip"
+        android:layout_marginRight="3.0dip"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_item_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/txtv_t_raise_lv_item_title_id"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textColor="@color/public_black_color"
+            android:textSize="@dimen/t_bnd_txtv_top_18_dimens" />
+
+        <TextView
+            android:id="@+id/txtv_t_raise_lv_item_content_id"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3.0dip"
+            android:ellipsize="end"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="@string/app_name" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2.0dip" >
+
+            <TextView
+                android:id="@+id/txtv_t_raise_lv_item_class_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name" />
+
+            <TextView
+                android:id="@+id/txtv_t_raise_lv_item_date_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="@string/app_name" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

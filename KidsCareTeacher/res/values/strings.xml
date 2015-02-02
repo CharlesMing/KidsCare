@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">幼校云</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">幼校云</string>
+    <string name="app_school_name_string">重庆人和桥幼儿园</string>
+    <string name="login_txtv_uname_string">用户名：</string>
+    <string name="login_txtv_pwd_string">密    码：</string>
+    <string name="login_txtv_uname_toast_string">请输入您的手机号码</string>
+    <string name="login_txtv_pwd_toast_string">请输入您的登录密码</string>
+    <string name="login_txtv_uname_right_toast_string">请输入正确的手机号码</string>
+    <string name="login_txtv_pwd_right_toast_string">请输入您的登录密码</string>
+    <string name="login_txtv_rember_string">记住用户名和密码</string>
+    <string name="login_txtv_show_string">请联系您或您孩子所在的幼儿园，确定是否已经开通幼校云服务。如需服务，请联系我们。</string>
+    <string name="login_txtv_erro_show_string">用户名或密码错误</string>
+    <string name="quit_toast_title_string">温馨提示</string>
+    <string name="quit_message_string">确定退出嘛？</string>
+    <string name="quit_sure_string">确定</string>
+    <string name="title">产品标题：</string>
+    <string name="applytoage">适合年龄：</string>
+    <string name="price">价格：</string>
+    <string name="introduce">产品介绍：</string>
+    <string name="quit_cancel_string">取消</string>
+    <string name="quit_back_string">再看看</string>
+    <string name="frame_exit_toast_string">再按一次退出程序</string>
+    <string name="setup_top_title_string">设置</string>
+    <string name="setup_about_string">关于我们</string>
+    <string name="setup_update_string">修改密码</string>
+    <string name="setup_about_app_name_string">幼校云 Android 1.0</string>
+    <string name="setup_about_company_string">重庆蓝标信息技术有限公司是一家充满活力而又年轻的创业公司，幼校云是公司自主研发和运营的产品。</string>
+    <string name="setup_about_company_name_string">重庆蓝标信息技术有限公司    版权所有</string>
+    <string name="setup_about_company_name_en_string">Copyright 2013 www.96lb.com All Rights Reserved.</string>
+    <string name="setup_clean_string">清空缓存</string>
+    <string name="setup_welcome_string">去欢迎页</string>
+    <string name="setup_backmsg_string">意见反馈</string>
+    <string name="setup_backmsg_phone_string">联系方式:</string>
+    <string name="setup_backmsg_phone_hint_string">请留下您的联系电话或E-mail</string>
+    <string name="setup_backmsg_message_string">您的意见:</string>
+    <string name="setup_backmsg_message_hint_string">请留下你宝贵的意见</string>
+    <string name="setup_backmsg_user_string">用户反馈</string>
+    <string name="setup_check_string">检查更新</string>
+    <string name="setup_check_version_string">当前版本1.0</string>
+    <string name="t_top_title_baby_choic_string">宝贝选择</string>
+    <string name="t_top_title_class_string">班级选择</string>
+    <string name="t_top_title_baby_string">宝贝选择</string>
+    <string name="t_top_title_myclass_string">联系家长</string>
+    <string name="t_top_title_raise_string">学习提高</string>
+    <string name="t_top_title_birthday_string">宝贝生日</string>
+    <string name="t_top_title_birthday_send_string">发送生日祝福</string>
+    <string name="t_top_title_service_string">配套服务</string>
+    <string name="t_top_title_message_string">家长留言</string>
+    <string name="t_top_title_replace_string">回复家长留言</string>
+    <string name="t_bn_top_title_string">宝宝点名</string>
+    <string name="t_bn_left_no_sign_30_string">未签到30人</string>
+    <string name="t_bn_left_no_sign_0_string">未签到30人</string>
+    <string name="t_bn_right_sign_0_string">已签到0人</string>
+    <string name="t_bn_right_sign_30_string">已签到30人</string>
+    <string name="t_bn_sure_sign_toast_string">确定批量签到?</string>
+    <string name="t_bn_sure_save_toast_string">确定保存宝宝点名信息?</string>
+    <string name="t_dynamic_count_people_string">已选择0个宝贝</string>
+    <string name="t_dynamic_teacher_say_string">教师评价</string>
+    <string name="t_dynamic_teacher_replycontent_string">回复内容：</string>
+    <string name="t_dynamic_teacher_default_say_string">今天宝贝一天都很乖,请家长放心!</string>
+    <string name="t_dynamic_teacher_default_reply_string">请输入您的回复内容！</string>
+    <string name="t_dynamic_txtv_relate_string">关联</string>
+    <string name="t_dynamic_txtv_no_choic_string">未选择任何动态</string>
+    <string name="t_class_telphone_num_string">138-8888-8888(爸爸)</string>
+    <string name="t_remind_birthday_date_string">08.08</string>
+    <string name="t_remind_count_people_string">共有6个小朋友今天过生</string>
+    <string name="t_remind_birthday_txtv_string">生日祝福:</string>
+    <string name="t_remind_birthday_default_txtv_string">祝你生日快乐，爱你的老师!</string>
+    <string name="p_main_left_txtv_age_string">3岁9个月</string>
+    <string name="p_main_right_txtv_go_school_time_string">到校时间:</string>
+    <string name="p_main_right_txtv_leval_school_time_string">离校时间:</string>
+    <string name="p_main_right_txtv_time_string">12月1日 08:30</string>
+    <string name="p_baby_class_txtv_title_week_1_string">星期一</string>
+    <string name="p_baby_class_txtv_title_week_2_string">星期二</string>
+    <string name="p_baby_class_txtv_title_week_3_string">星期三</string>
+    <string name="p_baby_class_txtv_title_week_4_string">星期四</string>
+    <string name="p_baby_class_txtv_title_week_5_string">星期五</string>
+    <string name="p_baby_class_txtv_title_week_6_string">星期六</string>
+    <string name="p_baby_class_txtv_title_week_7_string">星期日</string>
+    <string name="p_baby_class_txtv_title_date_string">2013.12.31</string>
+    <string name="p_baby_class_txtv_am_string">"07：30——08：00 入园、自选游戏活
+08：00——08：30 餐前盥洗、早餐 
+08：30——08：45 室内自由自选（区域）活动
+08：45——09：00 早操、户外游戏 
+09：00——10：00 教育活动、喝水 
+10：00——11：00 户外活动 
+11：00——11：20 室内自由自选（区域）活动、喝水
+11：20——11：30 餐前准备盥洗、入厕 
+11：30——12：00 午餐、散步
+"</string>
+    <string name="p_baby_class_txtv_pm_string">"12：00——14：30 午睡
+14：30——15：00 起床、喝水、餐点
+15：00——15：40 室内自由自选（区域）活动
+15：40——16：40 户外活动、喝水
+16：40——16：50 餐前准备
+16：50——17：20 晚餐、离园准备
+17：20——18：00 离园 注：喝水、入厕根据幼儿需要随时进行"</string>
+    <string name="p_baby_food_txtv_am_string">早餐</string>
+    <string name="p_baby_food_txtv_am_plus_string">上午加餐</string>
+    <string name="p_baby_food_txtv_pm_string">午餐</string>
+    <string name="p_baby_food_txtv_pm_plus_string">下午加餐</string>
+    <string name="p_baby_food_txtv_supper_string">晚餐</string>
+    <string name="p_top_title_baby_dynamic_string">宝贝动态</string>
+    <string name="p_top_title_replyall_string">回复所有留言</string>
+    <string name="p_top_title_about_string">关于我们</string>
+    <string name="p_top_title_news_string">新闻</string>
+    <string name="p_top_title_activity_string">活动报名</string>
+    <string name="p_top_title_class_string">宝贝课程</string>
+    <string name="p_top_title_food_string">宝贝食谱</string>
+    <string name="p_top_title_dear_activity_string">亲子活动</string>
+    <string name="p_top_title_shop_string">育儿中心</string>
+    <string name="p_top_title_message_string">回复家长留言</string>
+    <string name="p_baby_activity_detail_title_string">活动标题:</string>
+    <string name="p_baby_activity_detail_content_string">活动内容:</string>
+    <string name="p_baby_activity_detail_class_string">针对班级:</string>
+    <string name="p_baby_activity_detail_date_string">布置时间:</string>
+    <string name="p_baby_activity_detail_teacher_string">发布老师:</string>
+    <string name="p_teacher_message_default_hint_string">请输入你的留言</string>
+    <string name="noshuju">暂无数据</string>
+    <string name="oldpwd">旧      密      码：</string>
+    <string name="newpwd">新      密      码：</string>
+    <string name="resetpwd">再次输入密码：</string>
+
+</resources>

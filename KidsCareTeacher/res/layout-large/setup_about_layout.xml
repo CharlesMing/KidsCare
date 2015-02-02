@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/setup_bg"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@id/flayout_top_id"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/setup_top_bg"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@id/btn_setup_about_back_id"
+            android:layout_width="80.0dip"
+            android:layout_height="40.0dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="9.0dip"
+            android:background="@drawable/btn_back_selector"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="9.0dip"
+            android:layout_marginRight="9.0dip"
+            android:gravity="center"
+            android:shadowColor="@color/public_black_color"
+            android:shadowDy="1.0"
+            android:shadowRadius="2.0"
+            android:text="@string/setup_about_string"
+            android:textColor="@color/public_white_color"
+            android:textScaleX="1.0"
+            android:textSize="@dimen/t_main_top_txtv_28_dimens"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <ScrollView
+        android:id="@id/scrollview_setup_about_id"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/flayout_top_id"
+        android:layout_marginTop="9.0dip" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="30.0dip"
+                    android:src="@drawable/about_company" />
+
+                <TextView
+                    android:id="@id/txtv_setup_about_app_name_id"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:padding="5.0dip"
+                    android:text="@string/setup_about_app_name_string"
+                    android:textColor="@color/setup_about_txtv_333333_color" />
+
+                <TextView
+                    android:id="@id/txtv_setup_about_content_id"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="5.0dip"
+                    android:padding="13.0dip"
+                    android:text="@string/setup_about_company_string"
+                    android:textColor="@color/setup_version_txtv_color" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="13.0dip"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_companyinfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/setup_about_company_name_string"
+                android:textColor="@color/setup_about_txtv_333333_color" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:gravity="center"
+                android:text="版权所有"
+                android:textColor="@color/setup_about_txtv_333333_color" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_register"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3.0dip"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/setup_about_company_name_en_string"
+            android:textColor="@color/setup_about_txtv_333333_color" />
+    </LinearLayout>
+
+</RelativeLayout>

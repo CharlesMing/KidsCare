@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/login_bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="9.0dip"
+        android:layout_marginTop="15.0dip"
+        android:background="@drawable/logo" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5.0dip"
+        android:background="@drawable/login_frame"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="26.0dip"
+            android:layout_marginRight="23.0dip"
+            android:layout_marginTop="80.0dip"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="36.0dip"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/login_uname"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5.0dip"
+                    android:text="@string/login_txtv_uname_string" />
+
+                <EditText
+                    android:id="@id/editv_login_uanem_id"
+                    android:layout_width="fill_parent"
+                    android:layout_height="34.0dip"
+                    android:layout_marginLeft="2.0dip"
+                    android:background="#00000000"
+                    android:hint="@string/login_txtv_uname_toast_string"
+                    android:inputType="phone"
+                    android:maxLength="11"
+                    android:textSize="@dimen/login_txt_uname_pwd_14_dimes" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="36.0dip"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/login_pwd"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5.0dip"
+                    android:text="@string/login_txtv_pwd_string" />
+
+                <EditText
+                    android:id="@id/editv_login_upwd_id"
+                    android:layout_width="fill_parent"
+                    android:layout_height="34.0dip"
+                    android:layout_marginLeft="2.0dip"
+                    android:background="#00000000"
+                    android:hint="@string/login_txtv_pwd_toast_string"
+                    android:inputType="textPassword"
+                    android:maxLength="19"
+                    android:textSize="@dimen/login_txt_uname_pwd_14_dimes" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="9.0dip"
+            android:layout_marginRight="9.0dip"
+            android:layout_marginTop="8.0dip"
+            android:gravity="right"
+            android:orientation="horizontal" >
+
+            <CheckBox
+                android:id="@+id/cb_login_ischeck_id"
+                style="@style/MyCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1.0dip"
+                android:layout_marginRight="15.0dip"
+                android:text="@string/login_txtv_rember_string"
+                android:textSize="14.0dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="34.0dip"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="15.0dip"
+            android:layout_marginRight="13.0dip"
+            android:layout_marginTop="12.0dip"
+            android:gravity="center_horizontal" >
+
+            <Button
+                android:id="@id/btn_login_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_login_selector"
+                android:onClick="login" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="23.0dip"
+            android:layout_marginRight="15.0dip"
+            android:layout_marginTop="6.0dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/heart" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2.0dip"
+                android:layout_marginRight="8.0dip"
+                android:paddingBottom="2.0dip"
+                android:paddingTop="2.0dip"
+                android:text="@string/login_txtv_show_string"
+                android:textColor="@color/public_CCCCCC_color"
+                android:textSize="@dimen/login_txt_show_11_dimes" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

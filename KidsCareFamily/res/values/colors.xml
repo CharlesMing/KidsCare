@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="public_black_color">#ff000000</color>
+    <color name="public_white_color">#ffffffff</color>
+    <color name="public_CCCCCC_color">#ffcccccc</color>
+    <color name="more_shape_corner_bg">#fff8f8f5</color>
+    <color name="more_pwhintfontcolor">#ffcacac7</color>
+    <color name="more_divider_color">#ffbdbdbd</color>
+    <color name="setup_version_txtv_color">#ff666666</color>
+    <color name="setup_about_txtv_333333_color">#ff333333</color>
+    <color name="setup_about_txtv_999999_color">#ff999999</color>
+    <color name="t_main_middle_text_color">#ffffff99</color>
+    <color name="t_bnd_txtv_right_99CC00_color">#ff99cc00</color>
+    <color name="t_bnd_txtv_right_A5C73C_color">#ff99ccaa</color>
+    <color name="t_bnd_txtv_right_FFCC00_color">#ffffcc00</color>
+    <color name="t_bnd_txtv_name_006600_color">#ff006600</color>
+    <color name="t_bnd_txtv_name_E0E0E0_color">#ffe0e0e0</color>
+    <color name="t_dynamic_detail_txtv_B5D848_color">#ffb5d848</color>
+    <color name="t_dynamic_detail_layout_B5F002_color">#ffb5f002</color>
+    <color name="t_raise_txtv_bg_color">#ffffeb9c</color>
+    <color name="p_main_baby_txtv_to_school_time_color">#ff990000</color>
+    <color name="p_class_top_date_txtv_E3FF8E_color">#ffe3ff8e</color>
+</resources>

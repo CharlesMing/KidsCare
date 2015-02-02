@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lanbiao.youxinteacher"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <instrumentation
+        android:name="android.test.InstrumentationTestRunner"
+        android:targetPackage="com.lanbiao.youxinteacher" >
+    </instrumentation>
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <uses-library android:name="android.test.runner" />
+
+        <activity
+            android:name="com.lanbiao.youxiaoyunteacher.activity.WelcomeActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.lanbiao.youxiaoyunteacher.activity.LoginWelcomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lanbiao.youxiaoyunteacher.activity.BabySelectActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lanbiao.youxiaoyunteacher.activity.TeacherActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lanbiao.youxiaoyunteacher.activity.ClassSelectActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lanbiao.youxiaoyunteacher.activity.TbabyMyStudentsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lanbiao.youxiaoyunteacher.activity.TbabyDynamicDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lanbiao.youxiaoyunteacher.activity.MyClassActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lanbiao.youxiaoyunteacher.activity.TbabyContactFamilyActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.lanbiao.youxiaoyunteacher.activity.Abc" />
+        <activity
+            android:name="com.lanbiao.youxiaoyunteacher.activity.TbabyNamedActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lanbiao.youxiaoyunteacher.activity.TbabyRaiseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lanbiao.youxiaoyunteacher.activity.TbabyRaiseListItemActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lanbiao.youxiaoyunteacher.activity.TbabyServiceActivity"
+            android:screenOrientation="portrait" />
+        <!-- 设置 -->
+        <activity
+            android:name="com.lanbiao.youxiaoyunteacher.activity.TbabySetUpActivity"
+            android:screenOrientation="portrait" />
+        <!-- 关于 -->
+        <activity
+            android:name="com.lanbiao.youxiaoyunteacher.activity.TbabyAboutActivity"
+            android:screenOrientation="portrait" />
+        <!-- 意见 -->
+        <activity
+            android:name="com.lanbiao.youxiaoyunteacher.activity.TbabyAdviceActivity"
+            android:screenOrientation="portrait" />
+        <!-- 学习提高的listview -->
+        <activity android:name="com.lanbiao.youxiaoyunteacher.activity.TbabyRaiseListItemActivity" />
+        <!-- 学习提高的详情 -->
+        <activity android:name="com.lanbiao.youxiaoyunteacher.activity.TbabyRaiseNewActivity" />
+        <!-- 配套服务 -->
+        <activity android:name="com.lanbiao.youxiaoyunteacher.activity.TbabyServiceActivity" />
+        <activity android:name="com.lanbiao.youxiaoyunteacher.activity.TbabyServiceListItemActivity" />
+        <activity android:name="com.lanbiao.youxiaoyunteacher.activity.TbabyServiceNewActivity" />
+
+        <!-- 测试 -->
+        <activity android:name="com.lanbiao.youxiaoyunteacher.activity.TestListView" />
+        <!-- 家长留言 -->
+        <activity android:name="com.lanbiao.youxiaoyunteacher.activity.TbabyQueryListMsgActivity" />
+        <activity android:name="com.lanbiao.youxiaoyunteacher.activity.TbabyMessageInfoActivity" />
+        <activity android:name="com.lanbiao.youxiaoyunteacher.activity.TbabyReplyAllActivity" />
+        <!-- 測試 -->
+        <activity android:name="com.lanbiao.youxiaoyunteacher.activity.TestActivity" />
+    </application>
+
+</manifest>

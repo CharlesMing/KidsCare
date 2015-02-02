@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <!-- ============线性布局============START -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <!-- ================左布局==START============== -->
+
+        <RelativeLayout
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp" >
+
+            <!-- 头像 -->
+
+            <ImageView
+                android:id="@+id/iv_babyhead"
+                android:layout_width="68dp"
+                android:layout_height="68dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_launcher" />
+        </RelativeLayout>
+        <!-- ================左布局==END============== -->
+
+
+        <!-- ================右布局==START============== -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical" >
+
+            <!-- =========生活照 =========START -->
+
+            <LinearLayout
+                android:id="@+id/ll_showImg_id"
+                android:layout_width="fill_parent"
+                android:layout_height="120dp"
+                android:gravity="center"
+                android:visibility="gone" >
+
+                <GridView
+                    android:id="@+id/grv_content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="120dp"
+                    android:numColumns="3" >
+                </GridView>
+            </LinearLayout>
+            <!-- =========生活照 =========END -->
+
+
+            <!-- =========内容=========START -->
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_teahcermsg"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:singleLine="false"
+                    android:textColor="#333333"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+            <!-- =========内容=========END -->
+
+
+            <!-- =========显示动态=========START -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:gravity="center" >
+
+                <GridView
+                    android:id="@+id/gv_show_id"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="12.0dip"
+                    android:numColumns="3" >
+                </GridView>
+            </LinearLayout>
+            <!-- =========显示动态=========END -->
+
+
+            <!-- =========显示时间=========START -->
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12.0dip"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_showtime_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:text="2014/3/17" />
+            </RelativeLayout>
+            <!-- =========显示时间=========END -->
+
+        </LinearLayout>
+        <!-- ================右布局==END============== -->
+    </LinearLayout>
+    <!-- ============线性布局============END -->
+
+
+    <!-- ============添加一个分隔线============START -->
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="?android:attr/listDivider" />
+    <!-- ============添加一个分隔线============END -->
+
+</LinearLayout>

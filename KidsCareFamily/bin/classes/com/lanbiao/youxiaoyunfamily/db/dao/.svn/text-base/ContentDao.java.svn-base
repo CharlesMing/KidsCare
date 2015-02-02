@@ -1,0 +1,81 @@
+package com.chinasousuo.groupsms.db.dao;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import android.content.ContentValues;
+import android.content.Context;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
+
+import com.chinasousuo.groupsms.db.ContentOpenHelper;
+import com.chinasousuo.groupsms.entity.Content;
+
+public class ContentDao {
+	private ContentOpenHelper openHelper;
+
+	public ContentDao(Context context) {
+		openHelper = new ContentOpenHelper(context);
+	}
+
+	/**
+	 * 添加到数据库
+	 * 
+	 * @param hello
+	 * @param text
+	 */
+	public void addContent(String hello, String text) {
+		SQLiteDatabase db = openHelper.getWritableDatabase();
+		ContentValues values = new ContentValues();
+		values.put("hello", hello);
+		values.put("text", text);
+		db.insert("content", null, values);
+		db.close();
+	}
+
+	/**
+	 * 添加普通短信
+	 * 
+	 * @param text
+	 */
+	public void addCommon(String text) {
+		SQLiteDatabase db = openHelper.getWritableDatabase();
+		ContentValues values = new ContentValues();
+		values.put("text", text);
+		db.insert("content", null, values);
+		db.close();
+	}
+
+	/**
+	 * 查询
+	 * 
+	 * @return
+	 */
+	public List<Content> find() {
+		SQLiteDatabase db = openHelper.getReadableDatabase();
+		List<Content> contents = new ArrayList<Content>();
+		Cursor cursor = db.query("content", new String[] { "hello", "text" },
+				null, null, null, null, null);
+		while (cursor.moveToNext()) {
+			String hello = cursor.getString(cursor.getColumnIndex("hello"));
+			String text = cursor.getString(cursor.getColumnIndex("text"));
+			Content content = new Content(hello, text);
+			contents.add(content);
+		}
+		cursor.close();
+		db.close();
+		return contents;
+	}
+
+	/**
+	 * 删除
+	 * 
+	 * @return
+	 */
+	public int delete() {
+		SQLiteDatabase db = openHelper.getWritableDatabase();
+		int number = db.delete("content", null, null);
+		db.close();
+		return number;
+	}
+}
